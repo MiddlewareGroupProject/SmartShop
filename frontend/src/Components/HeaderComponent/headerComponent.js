@@ -80,7 +80,7 @@ export default function HeaderComponent() {
         <Link to="/">
           <img src={img} className="hLogo" />
           <h1 className="navbar-brand" id="hTopic">
-            YoShop
+            SmartShop
           </h1>
         </Link>
         <div className="navbarOthers">
