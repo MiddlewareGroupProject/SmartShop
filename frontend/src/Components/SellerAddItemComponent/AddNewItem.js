@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import Axios from "axios";
+import image from '../../Images/Rolex.jpeg';
 
 function AddNewItem() {
   const [title, setItemName] = useState("");
@@ -13,6 +14,7 @@ function AddNewItem() {
       title,
       price,
       description,
+      image
     };
     Axios.post(`http://localhost:5000/itemDetails`, itemDetails)
       .then((res) => {
