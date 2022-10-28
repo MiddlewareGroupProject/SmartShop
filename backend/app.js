@@ -14,7 +14,7 @@ const port = process.env.PORT || 5000;
 
 const Mongo_url = process.env.SHOPPING_MONGO_DB;
 
-mongoose.connect("mongodb://localhost/SHOPPING_MONGO_DB", {
+mongoose.connect(Mongo_url, {
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true,
